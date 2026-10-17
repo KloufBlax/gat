@@ -1,0 +1,423 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #222;
+}
+
+.pagina {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border: none;
+}
+
+/*menu superior no te olvides :V*/
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a,
+.login {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.buscador {
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+}
+
+.saldo {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.saldo span {
+    color: red;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.depositar {
+    background: #11975a;
+    color: white;
+    padding: 9px 13px;
+}
+
+.portada {
+    background: #858585;
+    min-height: 290px;
+    text-align: center;
+    padding: 45px 20px;
+    position: relative;
+}
+
+.portada h1 {
+    font-size: 40px;
+    margin: 0 0 25px;
+}
+
+.portada p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+
+.flecha {
+    position: absolute;
+    top: 40%;
+    font-size: 32px;
+    color: white;
+}
+
+.izquierda {
+    left: 10%;
+}
+
+.derecha {
+    right: 10%;
+}
+
+.centrado {
+    text-align: center;
+    padding: 15px;
+}
+
+.boton-negro {
+    background: #222;
+    color: white;
+    padding: 14px 45px;
+    font-size: 11px;
+}
+
+/*promos*/
+.promociones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.tarjeta {
+    border: 1px solid #e0e5ed;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imagen {
+    min-height: 220px;
+    background: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #666;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.tarjeta p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 12px;
+}
+
+/*atlanticclub*/
+.club {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #c5cbe0;
+    padding: 12px;
+}
+
+.texto {
+    text-align: center;
+    padding: 15px;
+    color: #1e2b5c;
+}
+
+.texto h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.texto p {
+    color: #657397;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.boton-azul {
+    background: #2584ed;
+    color: white;
+    padding: 11px 15px;
+    margin-top: 10px;
+}
+
+.imagen-club {
+    min-height: 270px;
+    background: #17121d;
+    color: white;
+}
+
+/*banner de atlantic club*/
+.banner-club {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 10px;
+    background: #350a4d;
+}
+
+.banner-club .imagen {
+    min-height: 300px;
+    background: #27123d;
+    color: white;
+}
+
+.banner-texto {
+    padding: 30px;
+    color: white;
+    background: #58117b;
+}
+
+.banner-texto h2 {
+    font-size: 23px;
+}
+
+.banner-texto p {
+    line-height: 1.6;
+}
+
+.boton-amarillo {
+    background: #e5c21c;
+    padding: 13px 20px;
+    margin-top: 15px;
+}
+
+.sportsbook {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 15px;
+    background: #f1f5ff;
+    border: 1px solid #d4d9e7;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+.sportsbook .imagen {
+    min-height: 220px;
+}
+
+/*point :v*/
+.ubicacion {
+    text-align: center;
+    padding: 25px 15px;
+    color: #1e2b5c;
+}
+
+.ubicacion h2 {
+    font-weight: normal;
+}
+
+.ubicacion p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #657397;
+}
+
+.mapa {
+    min-height: 380px;
+    margin: 25px auto;
+    border-radius: 12px;
+    max-width: 95%;
+}
+
+.descargas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.descargas button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #9aa7c5;
+    background: white;
+    color: #566a9c;
+}
+
+.google {
+    font-size: 27px;
+    color: #4285f4;
+    font-weight: bold;
+}
+
+/*suscripciones*/
+.suscripcion {
+    background: #f0f4ff;
+    border: 1px solid #cdd5e8;
+    padding: 25px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #1e2b5c;
+}
+
+.suscripcion p {
+    font-size: 13px;
+    color: #657397;
+}
+
+.suscripcion form {
+    display: flex;
+}
+
+.suscripcion input {
+    padding: 13px;
+    border: 1px solid #ddd;
+    min-width: 180px;
+}
+
+.suscripcion button {
+    background: #2584ed;
+    color: white;
+    padding: 12px;
+}
+
+footer {
+    padding: 35px 4% 20px;
+    color: #657397;
+    font-size: 12px;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: 1.7fr repeat(4, 1fr);
+    gap: 25px;
+}
+
+footer h3 {
+    color: #101d4a;
+    font-size: 14px;
+}
+
+footer a {
+    display: block;
+    color: #657397;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.redes {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.redes span {
+    background: #e2e8f6;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.copyright {
+    border-top: 1px solid #b8c2db;
+    margin-top: 35px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* para celares V: */
+@media (max-width: 700px) {
+    .pagina {
+        margin: 5px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .promociones {
+        grid-template-columns: 1fr;
+    }
+
+    .club,
+    .sportsbook {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-club {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-club .imagen {
+        min-height: 150px;
+    }
+
+    .columnas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .columna-principal {
+        grid-column: 1 / -1;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .suscripcion form {
+        width: 100%;
+    }
+
+    .suscripcion input {
+        min-width: 0;
+        width: 100%;
+    }
+}
